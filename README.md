@@ -37,4 +37,15 @@
      "ghcr.libcuda.so": "https://ghcr.io",
    };
    ```
-
+## Config Docker origin
+```bash
+cat > /etc/docker/daemon.json << EOF
+{
+    "registry-mirrors": [
+        "https://dockerproxy.com"
+    ]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
