@@ -3,7 +3,7 @@ name: Deploy to Cloudflare Workers
 on:
   push:
     branches:
-      - master
+      - dev_yohann
     paths-ignore:
       - '**.md'
   repository_dispatch:
